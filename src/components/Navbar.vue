@@ -28,9 +28,9 @@
 
       <!-- Desktop Navigation Links -->
       <div class="hidden md:flex space-x-4">
-        <button v-for="link in navLinks" :key="link.name" :class="buttonClass(link)">
+        <RouterLink v-for="link in navLinks" :key="link.name" :to="link.url" :class="buttonClass(link)">
           {{ link.name }}
-        </button>
+        </RouterLink>
       </div>
 
       <!-- Contact Information (visible on larger screens) -->
@@ -48,9 +48,9 @@
         @click.stop
       >
         <div class="flex flex-col items-center space-y-2 py-4">
-          <button v-for="link in navLinks" :key="link.name" :class="buttonClass(link)">
+          <a v-for="link in navLinks" :key="link.name" :href="link.url" :class="buttonClass(link)">
             {{ link.name }}
-          </button>
+          </a>
           <!-- Contact Information for mobile -->
           <div class="flex items-center space-x-1 text-gray-600 pt-2">
             <i class="fas fa-phone-alt"></i>
@@ -65,13 +65,13 @@
 <script setup>
 import { ref } from 'vue';
 
-// Define navigation links and styles
+// Define navigation links with URLs
 const navLinks = ref([
-  { name: 'Home', active: false },
-  { name: 'About Us', active: false },
-  { name: 'Services', active: false },
-  { name: 'How It Works', active: false },
-  { name: 'Contact Us', active: false },
+  { name: 'Home', url: '/', active: false },
+  { name: 'About Us', url: '/', active: false },
+  { name: 'Services', url: '/', active: false },
+  { name: 'How It Works', url: '/', active: false },
+  { name: 'Contact Us', url: '/', active: false },
 ]);
 
 // State for mobile menu toggle
