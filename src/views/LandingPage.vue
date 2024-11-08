@@ -4,9 +4,9 @@
         <h1 class="text-4xl md:text-8xl font-bold text-gray-800">Welcome to Miner</h1>
         <p class="mt-4 text-gray-800 text-3xl font-bold md:text-7xl">Your Gateway to</p>
         <p class="mt-4 text-gray-800 text-2xl font-bold md:text-4xl">Cryptocurrency Mining</p>
-        <button class="bg-gray-700 text-white text-xl md:text-3xl font-bold rounded-full px-8 md:px-12 py-2 md:py-4 my-12">
+        <RouterLink :to="{name: 'signup'}" class="bg-gray-700 text-white text-xl md:text-3xl font-bold rounded-full px-8 md:px-12 py-2 md:py-4 my-12">
           Get Started Now
-        </button>
+        </RouterLink>
       </div>
   
       <div class="flex flex-col items-center justify-center">
@@ -79,6 +79,7 @@
 import Services from '@/components/Services.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
+import { RouterLink } from 'vue-router';
 
 </script>
 

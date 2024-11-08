@@ -9,11 +9,16 @@ const router = createRouter({
       name: 'home',
       component: LandingPage,
     },
-    // {
-    //   path: '/navbar',
-    //   name: 'about',
-    //   component: () => import('../views/AboutView.vue'),
-    // },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: () => import('../views/auth/Signup.vue'),
+    },
+    {
+      path: '/signin',
+      name: 'signin',
+      component: () => import('../views/auth/Signin.vue'),
+    },
   ],
 })
 
