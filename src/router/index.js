@@ -19,6 +19,13 @@ const router = createRouter({
       name: 'signin',
       component: () => import('../views/auth/Signin.vue'),
     },
+
+    //404 pages redirection
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'notFound',
+      component: () => import('../views/NotFound/NotFound.vue'),
+    },
   ],
 })
 

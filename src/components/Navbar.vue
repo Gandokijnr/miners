@@ -7,7 +7,7 @@
              class="w-10 sm:w-12 h-12 sm:h-16"
              alt="Logo"
         />
-        <span class="text-xl font-semibold text-gray-800">MINER</span>
+        <RouterLink to="/" class="text-xl font-semibold text-gray-800">MINER</RouterLink>
       </div>
 
       <!-- Hamburger Icon (for mobile) -->
@@ -64,6 +64,7 @@
 
 <script setup>
 import { ref } from 'vue';
+
 
 // Define navigation links with URLs
 const navLinks = ref([
