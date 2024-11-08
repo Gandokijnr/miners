@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen items-center justify-center bg-gray-50">
+    <div class="flex h-screen items-center justify-center bg-gray-50 fade-in-top">
       <div class="flex max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
         <!-- Left Side: Form -->
         <div class="w-full md:w-1/2 p-8 md:p-12">
