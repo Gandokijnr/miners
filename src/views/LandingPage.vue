@@ -1,5 +1,5 @@
 <template>
-    <div class="my-12 scale-in-center">
+    <div class="my-12 fade-in-top">
       <div class="flex flex-col items-center justify-center text-center">
         <h1 class="text-4xl md:text-8xl font-bold text-gray-800">Welcome to Miner</h1>
         <p class="mt-4 text-gray-800 text-3xl font-bold md:text-7xl">Your Gateway to</p>
@@ -83,7 +83,7 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <style scoped>
-.scale-in-center{-webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both}
+.fade-in-top{-webkit-animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both}
 
- @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+@-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 </style>
